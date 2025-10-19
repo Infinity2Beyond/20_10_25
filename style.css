@@ -1249,6 +1249,35 @@
     }
   }
   
+
+  @media screen and (max-width: 768px) {
+    
+    /* 2.1. Thiết lập hiệu ứng chuyển đổi mượt mà */
+    #anya, .message {
+        transition: transform 0.5s ease, bottom 0.5s ease, left 0.5s ease;
+    }
+
+    /* 2.2. Thu nhỏ Anya khi class 'is-minimized' được thêm */
+    #anya.is-minimized {
+        /* Thu nhỏ 1/3 (scale 0.33) */
+        transform: scale(0.2); 
+        /* Di chuyển Anya (đảm bảo vẫn nhìn thấy được) */
+        /* Giả sử vị trí ban đầu là khoảng left: 0, bottom: 0 */
+        bottom: -5em; /* Hạ thấp hơn một chút */
+        left: -8em;  /* Giữ ở góc trái */
+        transform-origin: bottom left; /* Đảm bảo điểm gốc thu nhỏ là góc dưới trái */
+    }
+
+    /* 2.3. Thu nhỏ Textbox khi class 'is-minimized' được thêm */
+    .message.is-minimized {
+        /* Thu nhỏ hộp thoại theo tỷ lệ tương ứng */
+        transform: scale(0.2); 
+        /* Di chuyển hộp thoại đến vị trí mới (gần Anya đã thu nhỏ) */
+        left: 2em; /* Tịnh tiến theo chiều ngang */
+        bottom: 11em; /* Tịnh tiến theo chiều dọc */
+        transform-origin: bottom left; 
+    }
+}
   
   
   @keyframes heartbeat

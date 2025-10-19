@@ -138,6 +138,18 @@ function show2() {
     
     // Hiển thị hộp quà
     document.getElementById("boxx1").style.display="block"; 
+
+    // === THÊM ĐOẠN CODE NÀY ĐỂ THU NHỎ ANYA VÀ TEXTBOX ===
+    const anyaElement = document.getElementById('anya');
+    const messageElement = document.querySelector('.message');
+    
+    if (anyaElement) {
+        anyaElement.classList.add('is-minimized');
+    }
+    if (messageElement) {
+        messageElement.classList.add('is-minimized');
+    }
+    // ===================================================
     
     // Thay đổi nội dung Text Box của Anya
     const anyaTextBox = document.getElementById('anya-text');
