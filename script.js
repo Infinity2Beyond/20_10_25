@@ -144,10 +144,10 @@ function show2() {
     const messageElement = document.querySelector('.message');
     
     if (anyaElement) {
-        anyaElement.classList.add('is-minimized');
+        anyaElement.classList.add('is-hidden-mobile');
     }
     if (messageElement) {
-        messageElement.classList.add('is-minimized');
+        messageElement.classList.add('is-hidden-mobile');
     }
     // ===================================================
     
