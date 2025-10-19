@@ -239,18 +239,18 @@ document.querySelector('.js-email').addEventListener("click", function() {
 
 const anya = document.querySelector(".anya");
 // initialize audio object:
-const audio1 = document.getElementById("AudioAnya");
-// play sound on hover (mouseover)
-anya.addEventListener("mouseover", function () {
-	setTimeout(() => {
-        audio1.pause(); 
-        audio1.load(); 
-        audio1.play();  
-    }, 1000);
-});
-// pause sound on mouseleave
-anya.addEventListener("mouseleave", function () {
-	// console.log(audio.duration);
-	audio1.pause();
-	audio1.currentTime = 0;
-});
+// const audio1 = document.getElementById("AudioAnya");
+// // play sound on hover (mouseover)
+// anya.addEventListener("mouseover", function () {
+// 	setTimeout(() => {
+//         audio1.pause(); 
+//         audio1.load(); 
+//         audio1.play();  
+//     }, 1000);
+// });
+// // pause sound on mouseleave
+// anya.addEventListener("mouseleave", function () {
+// 	// console.log(audio.duration);
+// 	audio1.pause();
+// 	audio1.currentTime = 0;
+// });
